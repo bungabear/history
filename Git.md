@@ -20,3 +20,7 @@
 
         # checksum이 변경되어 -f 옵션 필요
         git push -f
+
+* ## git add 취소하기
+
+        git reset [파일]

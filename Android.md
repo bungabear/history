@@ -1,11 +1,16 @@
 # 목차
 * ## [ADB](#category-adb)
     * [패키지 목록 조회](#패키지-목록-조회)
+    * [앱 덤프](#앱-덤프)
 * ## 개발
     * [화면 사이즈 가져오기](#화면-사이즈-가져오기)
     * [IntDef 정의하기](#intdef-정의하기)
     * [Service Handler Binder 차이](#handler와-binder차이)
     * [앱 디버그 상태 self 체크](#디버그-상태-체크)
+
+* ### Asset 가져오기
+  getAsset().open("asset폴더내 경로")
+  new Uri()
 
 * ### 화면 사이즈 가져오기  
     ___Activity___
@@ -76,6 +81,9 @@
 
 * ### 앱 덤프
 
-        pm dump [패키지명]
+      pm dump [패키지명]
 
-    
+* ### 브로드캐스트 전체 조회
+
+      dumpsys activity broadcasts // 전체 목록 조회
+      dumpsys activity broadcasts history // 브로드캐스트 발생 기록 조회
