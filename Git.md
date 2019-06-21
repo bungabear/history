@@ -24,3 +24,20 @@
 * ## git add 취소하기
 
         git reset [파일]
+        
+
+* ## git merge에서 특정 파일 제외하기
+    A에 B를 합치는데 일부 파일을 제외.
+
+        git checkout A
+        git checkout -b Amerge
+        git merge --no-log --no-ff --no-commit B
+        git checkout Amerge [머지 안할 파일들]
+        git add [머지할 파일들]
+        git commit -m "커밋 메세지"
+        git push origin Amerge:A 
+        git checkout A
+        git branch -d Amerge
+        git fetch
+        git pull
+        
